@@ -1,0 +1,19 @@
+should move up and down
+
+button to control
+    inside car (level change) 
+    outside car (call car)
+
+dispatcher algo (controlling the car (all logic))
+
+100 floor buildings and 20 elevators (eg)
+
+all elevators should not be go from 0 to 100
+break up into zones
+1 - 20  - zone1 - e1-e4
+21 - 40 ------------
+||ly all
+
+open/close door  (while moving close)
+
+limitations on car

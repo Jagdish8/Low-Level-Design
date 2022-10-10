@@ -1,0 +1,15 @@
+multiplayer 
+
+customizable board interms of snakes and ladder placement and board size
+
+customizable in terms of number of dice used 
+
+load all once game starts
+
+
+https://www.youtube.com/watch?v=zRz1GPSH50I&list=PLJN9ydlFnJsiEgyjO3D3yBhtiENymhF8G&index=1
+
+
+
+
+# code can be refactored, all basics is there

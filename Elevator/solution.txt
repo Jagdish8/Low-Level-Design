@@ -1,0 +1,97 @@
+elevator car : 
+
+    button panel
+    door
+    boolean isMoving
+    boolean isMovingUp
+    currentFloor
+    startFloor
+    endFloor
+
+
+    moveToTheFloor(int floor):
+
+
+button panel interface:
+
+    boolean sendInstructionToDispatcher(int curr_floor,int dest, bool isMovingUp)
+
+
+button panel outside car(on each floor) service implements button panel interface
+
+    # boolean sendInstructionToDispatcher(int curr_floor,int dest, bool isMovingUp)
+    boolean sendInstructionToDispatcher(null,curr_floor of floor where button pressed, bool isMovingUp)
+    first para will be null, 3rd parameter can be True or False
+
+
+button panel inside car service implements button panel interface
+
+    # boolean sendInstructionToDispatcher(int curr_floor,int dest, bool isMovingUp)
+    boolean sendInstructionToDispatcher(curr_floor of car,dest is where is pressed, bool isMovingUp)
+    isMoving will be calculated as dest - curr_floor (positive or negative)
+
+
+Door:
+
+    boolean isOpen
+
+    boolean closeTheDoor()
+    boolean OpenTheDoor()
+
+
+main:
+
+    list<elevator> allElevators
+    list<floors> allFloors
+    
+    startElevatorSystem()
+    stopSystem()  (stop all or stop one zone or any other comb for maintainance) (can overload)
+
+floor:
+
+     int currentFloor
+     ButtonPanel buttonPanel
+
+    callEvevator(int currentFloor,buttonPanel)
+
+
+    
+dispatcher unit is the one which controls moving of the elevator car
+
+dispatcher:
+
+    # 1st algo
+    queue
+    # first come first server
+    # this works for only 1 elevator
+
+    for multiple zones:
+
+        balancer which will point to the zone
+        now we are in relevent zone
+    there are many elevators
+    suppose 4
+    get floor of each elevator and also isMovingUp(current Direction)
+    based on this we will take decision which elevator can serve the request
+    and for that perticular elevator we can do first come first serve
+
+
+    #2nd algo
+    # scan algo
+    let request array represents an array storing indexes of the floor that have been requested in ascending
+    order of their request 'head' is the position of current floor
+
+    in the direction in which head is moving service all the floors one by one
+    
+    currently serviced position becomes the new head
+
+    This process is done untill elevator reaches at the top, now reverse the direction and repeat again
+    for down and same for up and so on.
+
+
+    
+
+
+
+
+
