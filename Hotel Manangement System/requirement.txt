@@ -1,0 +1,34 @@
+
+services:
+bookRoomService
+checkRoomAvailability
+checkout
+
+hotel
+hotelName
+hotelId
+adress
+list of rooms
+
+address
+no
+cross
+area
+city
+state
+country
+pincode
+
+room
+roomId
+roomOccupied
+typeOfRoom
+
+typeOfRoom
+single
+double
+
+bookRoom
+bookingId
+list of [roomId,typeOfRoom,no_of_days]
+totalPrice
