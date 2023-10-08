@@ -1,10 +1,12 @@
-should move up and down
+multiple elevators
+
+states can be up, down or stop
 
 button to control
     inside car (level change) 
     outside car (call car)
 
-dispatcher algo (controlling the car (all logic))
+dispatcher algo (controlling the car (alogicll ))
 
 100 floor buildings and 20 elevators (eg)
 
@@ -14,6 +16,7 @@ break up into zones
 21 - 40 ------------
 ||ly all
 
+open door while in stop
 open/close door  (while moving close)
 
 limitations on car
