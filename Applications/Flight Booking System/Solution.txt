@@ -1,0 +1,28 @@
+https://www.youtube.com/watch?v=5yEoh3toRyE&list=PLPtUyMfD0mNIQ9rSXdX5LprFvbIJ0KrIQ
+
+Requirements :
+1. search flights based on arrival + destination + date of travel
+2. login to application
+3. select the flight
+4. enter personal details
+5. make payment
+6. notification mail/message
+
+Solution:
+
+- Think of how many actors are going to be there
+    - user
+    - admin
+    - airline authority (Operators)
+
+- Think from bottom up approach what all entity class are required
+    - Person Entity
+    - Seat Entity (economical and all) (can be made as enum)
+    - Flight Entity
+    - Booking Entity
+    - Payment Entity
+    - Notification Entity
+
+check pdf...
+
+and you can add more as you think.
