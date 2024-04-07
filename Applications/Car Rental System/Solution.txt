@@ -1,0 +1,19 @@
+https://www.youtube.com/watch?v=AXa6jCfziRY&list=PLPtUyMfD0mNIQ9rSXdX5LprFvbIJ0KrIQ&index=2
+
+Requirements:
+    1. User create account
+    2. search and list all available cars for that location
+    3. booking a car (by giving pickup and drop location)
+    4. payment
+    5. notification
+
+Actors : Customer and Operators
+
+Entity class :
+    - User
+    - Car
+    - Booking
+    - Payment
+    - Notification
+
+check PDF....
