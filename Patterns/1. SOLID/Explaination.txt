@@ -1,0 +1,231 @@
+Applications of these principles:
+    1. avoid duplicate code
+    2. easy to maintain
+    3. easy to understand
+    4. flexible software
+    5. reduce complexity
+
+
+Single Responsibility Principle:
+    A class should have only 1 reason to change (A class should have only 1 responsibility)
+
+    we have class marker
+    class Marker {
+        String color;
+        int price;
+
+        constructor...
+    }
+
+    we want to generate invoice
+    class Invoice {
+        Marker marker;
+        int quantity;
+
+        constructor.....
+
+        public int calculateTotal(){
+            return marker.price * quantity;
+        }
+
+        public void printInvoice() {
+           // print Invoice
+        }
+
+        public void saveToDb(){
+            // save to db
+        }
+    }
+
+    above does not follow SRP, because
+        1. If some day we need to add GST option in the calculation, we have to change the logic -> 1st reason to change
+        2. If we need to change printing logic -> 2nd reason
+        3. If we need to change save in file ->  3rd reason
+    But we should have only 1 reason to change
+
+    Correct way by creating 3 different classes:
+
+        class Invoice {
+            Marker marker;
+            int quantity;
+
+            constructor.....
+
+            public int calculateTotal(){
+                return marker.price * quantity;
+            }
+        }
+
+        class InvoiceDao {
+            Invoice invoice;
+
+            constructor.....
+
+            public void saveToDb(){
+                // save to db
+            }
+        }
+
+        class InvoicePrinter {
+            Invoice invoice;
+
+            constructor.....
+
+            public void printInvoice() {
+               // print Invoice
+            }
+        }
+
+Open/Closed Principle:
+    Open for extension, Close for modification
+
+    class InvoiceDao {
+        Invoice invoice;
+
+        constructor.....
+
+        public void saveToDb(){
+            // save to db
+        }
+    }
+
+    If we have a requirement that, we want to save data in file as well.
+    class InvoiceDao {
+        Invoice invoice;
+
+        constructor.....
+
+        public void saveToDb(){
+            // save to db
+        }
+
+        public void saveToFile(String fileName){
+            // save to file
+        }
+    }
+
+    above it not following OC, we should not change already tested and live file for new requirement
+    below is correct way:
+
+        interface InvoiceDao{
+            public void save(Invoice invoice);
+        }
+
+        class DatabaseInvoiceDao implements InvoiceDao {
+            Invoice invoice;
+
+            constructor.....
+
+            @Override
+            public void save(){
+                // save to db
+            }
+
+        }
+
+        class FileInvoiceDao implements InvoiceDao {
+            Invoice invoice;
+
+            constructor.....
+
+            @Override
+            public void save(String fileName){
+                // save to file
+            }
+        }
+
+Liskov Substitution Principle:
+    If class B is a subtype of class A, then we should be able to replace object of A with B without  breaking the behavior of the program
+    Subclass should extend the capability of parent class not narrow it down.
+
+    interface Bike {
+        public void turnOnEngine();
+        public void accelerate();
+    }
+
+    class MotorCycle implements Bike {
+        Engine engine;
+        int acc;
+
+        @Override
+        public void turnOnEngine() {
+            engine = true;
+        }
+
+        @Override
+        public void accelerate() {
+            acc += 10;
+        }
+    }
+
+    class Bicycle implements Bike {
+        Engine engine;
+        int acc;
+
+        @Override
+        public void turnOnEngine() {
+            // throwing error
+        }
+
+        @Override
+        public void accelerate() {
+            acc += 5;
+        }
+    }
+
+    // above does not follow LSP, because:
+        1. lets say we have Object of Bike and till now we were calling methods using motorCycle class,
+            but we change it to Bicycle behaviour changes since turnOnEngine is not applicable.
+        2. we are narrowing down the functionality of parent.
+
+    below is a correct way:
+        there are multiple ways, one of them is below
+        class vehicle {
+            accelerate();
+        }
+        class EngineVehicle extend vehicle {
+            change logic of accelerate
+            turnOnEngine();
+        }
+        class EngineVehicle extend vehicle {
+            change logic of accelerate
+        }
+
+        Or, we can keep vehicle as interface , both works.
+
+Interface Segmented Principle:
+    Interfaces should be such, that client should not implement unnecessary functions they do not need.
+
+    From above example, lets say we have 2 clients bicycle and motorcycle, they both have different methods.
+    we could have below approach as well:
+        interface nonEngine {
+            // methods
+        }
+        interface Engine {
+            // methods
+        }
+
+        lets assume both of them do not have anything in common, so above can be followed
+        best example -> waiter and chef (both have different methods)
+
+
+
+Dependency Inversion Principle:
+    class should depend on interfaces rather than concrete classes
+
+    Let say we have interfaces KeyBoard and Mouse
+    there are implementation WiredKeyBoard and BluetoothKeyBoard and WiredMouse and BluetoothMouse
+
+    class laptop {
+        WiredKeyBoard keyBoard;
+        BluetoothMouse mouse;
+        constructor ...
+    }
+
+    above does not follow DIP, we should have like below
+    class laptop {
+        KeyBoard keyBoard;
+        Mouse mouse;
+        constructor ...
+    }
+
