@@ -1,0 +1,10 @@
+Abstract Design pattern is factory of factory
+
+there can be 1 or more factories:
+
+    eg: there is vehicle factory
+        then luxury car factory and ordinary car factory
+        then under this luxury car interface and ordinary car interface
+        and classes of each interface
+
+
