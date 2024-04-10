@@ -1,0 +1,25 @@
+First question will be about design of book my show and then concurrency (what will you do in case of 2 users click on same seat at same place)
+
+check pdf and code for design
+- there can be 1 more controller BookingController which will handle all the booking stuff
+
+concurrency:
+    1. if both select at same time then, what to do
+    2. keep seat book for 5 mins when user selects book seat
+
+    There are 2 types of lock.
+       1. Optimistic
+           - It allows multiple users to read at same time
+           - At the time of update, checks version of the row(seat)
+           - if version is higher -> throws error for refresh -> read again
+           - if version is same -> acquire lock and update the row version -> release lock
+       2. Pessimistic
+           - When 1 user read, at that acquire the lock.
+           - update it and release the lock
+
+For bookMyShow -> Optimistic locking will be better.
+    because traffic is more, cannot show all seat full.
+
+
+Timer at locking can be achieved at redis.
+Redis allows to give timing(Expiry Time) to lock
