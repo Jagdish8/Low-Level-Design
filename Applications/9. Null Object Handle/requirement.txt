@@ -1,0 +1,6 @@
+how to handle null pointer exceptions.
+
+Solution should have:
+    - A null Object replaces NULL return type
+    - No need to put if check for checking NULL
+    - NULL Object reflects do Nothing or Default behaviour
