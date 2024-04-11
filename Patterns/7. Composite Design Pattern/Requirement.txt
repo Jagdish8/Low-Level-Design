@@ -1,0 +1,48 @@
+Composite design pattern:
+    Object inside object
+
+
+    problem is creating tree like structure  -> means object inside object
+    eg:
+
+        1.  Employee
+
+            Ceo -> Director and others
+            Director -> Managers, Group Managers and other
+            ......
+            IT Engineer -> leaf
+
+        2.  Delivery Box -> Product and Box
+            Box -> Product and Box
+
+Problem:
+
+    - we want file system
+    - file system can have file and directory
+    - directory can have multiple files and multiple directories
+    - we can create 2 classes Directory and File
+    - Directory has to contains List<Object> <- this object can be File or Directory
+    - so in ls method of directory, we have to check instanceOf File and Directory and typeCase
+    - this is the problem statement
+
+
+Solution:
+
+    - interface FileSystem with ls method
+    - leaf node implements the interface -> in our case file is leaf node
+    - composite node implements the interface -> in our case directory is composite node
+    - in Directory class we will have List<FileSystem> -> list of interface
+    - so Directory has FileSystem
+    - file is FileSystem and Directory is FileSystem
+
+
+Other Example :
+
+    Calculator:
+        - 2 * (1+7)
+        - 2 is leaf
+        - * and + are composite
+        - * has 2 and + as nodes
+        - + has 1 and 7
+
+check code
