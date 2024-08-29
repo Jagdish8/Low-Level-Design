@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d1dd8f1-af09-4e5b-b89c-6f86da0d40ab" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/Applications.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/12. SplitWise.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../12. SplitWise/requirement.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/13. StackOverflow.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/Answer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/Comment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/Question.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/StackOverflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/Tag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/Vote.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../13. StackOverflow/VoteType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/14. PubSub System.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PubSub.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../.idea/misc.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="2l1WVyHWipN1EKNy6jYbEGn0FvX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/jagdi/Documents/GitHub/Low Level Design/Applications/14. PubSub System"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d1dd8f1-af09-4e5b-b89c-6f86da0d40ab" name="Changes" comment="" />
+      <created>1724348090952</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1724348090952</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

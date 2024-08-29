@@ -1,0 +1,16 @@
+requirements:
+
+    - add expense against someone
+    - create groups
+    - add/manage someone to group
+    - add/manage expense in group
+    - split expenses (equal, unequal, percentage)
+    - balance sheet of each user
+
+Object identification:
+    - SplitWise
+    - User
+    - Group
+    - Expense
+    - Split
+    - BalanceSheet
